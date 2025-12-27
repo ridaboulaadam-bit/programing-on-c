@@ -1,21 +1,21 @@
-// // //  boucles
-//  ex1
-#include <stdio.h>
-int main(){
+// // // //  boucles
+// //  ex1
+// #include <stdio.h>
+// int main(){
 
-  int a,i,n;
-  printf ("donner la valeur de nombre:");
-  scanf("%d",&a);
-  for (i=1;i<=10;i++){
-    n=a+i;
+//   int a,i,n;
+//   printf ("donner la valeur de nombre:");
+//   scanf("%d",&a);
+//   for (i=1;i<=10;i++){
+//     n=a+i;
     
-printf("%d\n",n);
+// printf("%d\n",n);
 
-  }
+//   }
 
 
-    return 0;
-}
+//     return 0;
+// }
 // // // 2 eme methode
 // // #include <stdio.h>
 // // int main(){
@@ -207,91 +207,6 @@ printf("%d\n",n);
 
 //     return 0;
 // }
-// ex10 jeu
-// #include<stdio.h>
-// #include<stdlib.h>
-// #include<time.h>
-// int main(){
-//     int n;
-//     int ne=0;
-//     int nt=0;
-//     int estcorrect=0;
-//     const int max=30,min=1;
-//     srand(time(NULL));
-//     n=(rand() % (max-min+1))+min;
-//     printf("l'ordinateur choisir un nombre enter 1et30");
-//     do{
-//         nt++;
-//         printf("quel le nombre?");
-//         scanf("%d",&ne);
-//        if(n>ne){
-//             printf("plus grand\n");
-//        }
-//         else if(n<ne)
-//         printf("petite\n");
-//         else{
-//         estcorrect=1;
-//         break;
-//         }
-
-//     }while(nt<5);
-//     if(estcorrect==1)
-//     printf("bravo");
-//     else
-//     printf("opps");
-
-
-//     return 0;
-// }
-// ex11
-// #include<stdio.h>
-// #include<math.h>
-// int main (){
-//     float a,b,i;
-//     int oper;
-//     char reponse;
-//     do{
-//         printf("-------Menu-----");
-//         printf("1-addition\n");
-//         printf("2-difference\n");
-//         printf("3-multiplication\n");
-//         printf("4-divesion\n");
-        
-//         printf("5-puissance\n"); 
-//         printf("choisire une operation\n");
-//         scanf("%d",&oper);
-//         printf("donner 1 er terme:\n");
-//         scanf("%f",&a);
-//         printf("donner 2eme terme:\n");
-//         scanf("%f",&b);
-//         switch (oper)
-//         {
-//         case 1:printf("le resulta est:%.2f\n",a+b);
-
-//             break;
-//         case 2:printf("le resulta est:%.2f\n",a-b);
-//         break;
-//         case 3:printf("le resulta est:%.2f\n",a*b);
-//         break;
-//         case 4: if(b!=0){
-//         printf("le resulta est:%.2f\n",a/b);
-
-//         break;
-//         }
-//         else
-//         printf("div imposible\n");
-//         case 5:printf("le resulta est:%.2d\n",pow(a,b));
-//          break;
-//         default: printf("operration incorrect\n");
-//             break;
-//         }
-
-//         printf("veux tu faire un autre operation?(O/N)\n");
-//         scanf(" %c",&reponse);
-//     }while(reponse !='N');
-//     return 0;
-// }
-
 // // ex12
 // #include<stdio.h>
 // int main(){
@@ -354,118 +269,31 @@ printf("%d\n",n);
 //     printf("%c\n",t[i]);
 //     return 0;
 // }
-// ex3
-// #include<stdio.h>
-// int main(){
-//     float T[10];
-//     int i;
-//     float s,p,m;
-//     printf("saisir element du tableau");
-//     for(i=0;i<10;i++){
-//         printf("T[%d]=",i);
-//     scanf("%f",&T[i]);
-//     }
-//     s=0;
-//     p=1;
-//     for (i=0;i<10;i++){
-//         s=s+T[i];
-//         p=p*T[i];
-        
-//     }
-//     m=s/10;
-//     printf("s=%.2f",s);
-//     printf("p=%.2f",p);
-//     printf("m=%.2f",m);
-
-//     return 0;
-// }
-// ex4
-// #include<stdio.h>
-// int main(){
-//     float U[3],V[3],p;
-//     int i;
-//     for(i=0;i<3;i++){
-//         printf("U[%d]=",i);
-//         scanf("%f",&U[i]);
-//         printf("V[%d]=",i);
-//         scanf("%f",&V[i]);
-
-//     }
-// p=0;
-// for(i=0;i<3;i++)
-// p=p+U[i]*V[i];
-
-// printf("p=%.2f",p);
-//     return 0;
-// }
-// ex5
 
 
-// #include<stdio.h>
-// int main(){
-//     int T[10],i,min;
-//     for(i=0;i<10;i++){
-//         printf("T[%d]=",i);
-//         scanf("%d",&T[i]);
-//     }
-//     min=T[0];
-//     for(i=0;i<10;i++){
-//         if (min>T[i])
-        
-//             min=T[i];  
-//     }
-//     printf("le min est:%d",min);
-//     return 0;
-// }
-// ex6
 
-// #include<stdio.h>
-// int main(){
-//     int T[10],i,n,x;
-//     for(i=0;i<10;i++){
-//         printf("T[%d]=",i);
-//         scanf("%d",&T[i]);
-        
-//     }
-//     printf("saisir un entier:");
-//     scanf("%d",&n);
-//     x=0;
-    
-//     for(i=0;i<10;i++){
-//         if(n==T[i])
-//         x++;
-        
-//     }
-//    if(x==0)
-//    printf("%d ne se trouve pas dans tableau",n);
-//    else
-//    printf("%d se trouve dans le tableau",n);
-
-
-//     return 0;
-// }
 // ex7 
 
-// #include<stdio.h>
-// int main(){
-//     int T[10],i,n,x;
-//     for(i=0;i<10;i++){
-//         printf("T[%d]=",i);
-//         scanf("%d",&T[i]);
+#include<stdio.h>
+int main(){
+    int T[10],i,n,x;
+    for(i=0;i<10;i++){
+        printf("T[%d]=",i);
+        scanf("%d",&T[i]);
         
-//     }
-//     printf("saisir un entier:");
-//     scanf("%d",&n);
-//     x=0;
+    }
+    printf("saisir un entier:");
+    scanf("%d",&n);
+    x=0;
     
-//     for(i=0;i<10;i++){
-//         if(n==T[i])
-//         x++;
+    for(i=0;i<10;i++){
+        if(n==T[i])
+        x++;
         
-//     }
+    }
   
-//    printf("x=%d",x);
+   printf("x=%d",x);
 
 
-//     // return 0;
-// }
+    // return 0;
+}
