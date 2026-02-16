@@ -1,7 +1,7 @@
+ 
 
 
-
-// // ex4 calculatrice
+// // // ex4 calculatrice
 // #include<stdio.h>
 // int main(){
     
@@ -14,7 +14,9 @@
 //    d=a-b;
 //    p=a*b;
 //    div=a/b;
-//    prinf("resulta de cette operation est:%.2f\n",s,d,p,div); 
+//    printf("resulta de cette operation est:%.2f\n",s,p);
+//    printf("resulta de cette operation est:%.2f\n",d);
+//    printf("resulta d'operation: %.2f\n",div); 
 
 //    return 0;
 // }
@@ -38,7 +40,7 @@
 // int main(){
 //    float r,v;
 //    const float pi=3.14;
-//    print("donner le rayon de sphere:");
+//    printf("donner le rayon de sphere:");
 //    scanf("%f",&r);
 //    v=(4*pi*pow(r,3))/3;
 //   printf("le volume de sphere est:%.2f\n",v);
@@ -131,22 +133,22 @@
 // // ex3
 
 // // ex4
-// #include<stdio.h>
-// int main(){
-//      int a;
-//      prinf("veulliez entrer l age denfant:");
-//      scanf("%d",&a);
-//      if(a=>6 && a<=7)
-//      pintf("poussin");
-//    else if(a=>8 && a<=9);
-//    prinf("pupille");
-//    else if(a>=10 && a<=11);
-//    prinf("Minime");
-//    else
-//    prinf("Cadet");
+#include<stdio.h>
+int main(){
+     int a;
+     printf("veulliez entrer l age denfant:");
+     scanf("%d",&a);
+     if(a>=1 && a<=7)
+     printf("poussin");
+   else if(a>7 && a<=18)
+   printf("pupille");
+   else if(a>18 && a<=30)
+   printf("Minime");
+   else
+   printf("Cadet");
 
-//    return 0;
-// }
+   return 0;
+}
 
 // // ex6 
 // #include<stdio.h>

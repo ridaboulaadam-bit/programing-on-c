@@ -4,7 +4,7 @@
 
 void*malloc(taill_octet);
 // ex
-// int *p=malloc(4*sizeof(int);
+// int *p=malloc(4*sizeof(int));
 // *(p+0)=9;
 // *(p+1)=95;
 // *(p+2)=19;
